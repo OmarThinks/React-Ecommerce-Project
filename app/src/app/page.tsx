@@ -14,15 +14,27 @@ import {
   FaStar,
 } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
+import { FaCartShopping } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className="flex flex-col self-stretch items-center">
       <div className="max-w-[1100px]">
-        <div className="self-stretch flex-row flex justify-between bg-slate-400">
-          <div />
-          <SiAdidas size={40} />
-          <SiAdidas size={40} />
+        <div className="self-stretch flex-row flex justify-between bg-slate-400 items-center">
+          <div className="w-[60px]" />
+          <SiAdidas size={60} />
+          <div className="flex flex-row items-center gap-3">
+            <div className="relative">
+              <div
+                className="absolute right-[-7px] top-[-7px] z-10 rounded-full w-4 h-4 justify-center items-center"
+                style={{ backgroundColor: "yellow" }}
+              >
+                <p className="text-[11px] text-center font-bold">1</p>
+              </div>
+              <FaCartShopping size={30} />
+            </div>
+            <p className="text-[20px] font-extrabold">Cart</p>
+          </div>
         </div>
         <div className="flex flex-row gap-[50px] p-2">
           <div className="flex flex-col gap-[10px]">
