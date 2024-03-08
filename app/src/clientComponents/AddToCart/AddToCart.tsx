@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components";
+import { Button } from "@components";
 import { memo } from "react";
 
 const AddToCart = memo(() => {

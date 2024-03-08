@@ -1,5 +1,6 @@
 import CSS from "csstype";
 import { memo } from "react";
+import { PressFiller } from "@components";
 
 const Button = memo(
   ({
@@ -7,17 +8,21 @@ const Button = memo(
     text,
     bgColor,
     textColor,
+    onClick,
   }: {
     style: CSS.Properties;
     text: string;
     bgColor: string;
     textColor: string;
+    onClick?: () => void;
   }) => {
     return (
       <div
         style={{ ...style, backgroundColor: bgColor }}
-        className="h-10 items-center justify-center flex rounded-full"
+        className="h-10 items-center justify-center flex rounded-full relative overflow-hidden"
       >
+        <PressFiller onClick={onClick} />
+
         <p
           className="text-center text-[15px] font-semibold p-0"
           style={{ color: textColor }}
