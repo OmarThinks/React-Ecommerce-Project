@@ -1,17 +1,26 @@
 import React, { memo } from "react";
+import CSS from "csstype";
 
 const Button = memo(
   ({
+    style,
     text,
     bgColor,
     textColor,
   }: {
-    //style;
+    style: CSS.Properties;
     text: string;
     bgColor: string;
     textColor: string;
   }) => {
-    return <div>Button</div>;
+    return (
+      <div
+        style={{ ...style, backgroundColor: bgColor }}
+        className="h-10 items-center justify-center flex rounded-full"
+      >
+        <p className="text-center">{text}</p>
+      </div>
+    );
   }
 );
 
