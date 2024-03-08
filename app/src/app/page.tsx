@@ -1,4 +1,4 @@
-import { ProductImage, SizeOption, Spacer } from "@components";
+import { ColorOption, ProductImage, SizeOption, Spacer } from "@components";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
 
@@ -77,6 +77,10 @@ export default function Home() {
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
             Color
           </p>
+          <div className="flex flex-row">
+            <ColorOption imgLink="/shirt-1.jpeg" isChosen={true} />
+            <ColorOption imgLink="/shirt-2.jpg" isChosen={false} />
+          </div>
           <Spacer />
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
             Size
