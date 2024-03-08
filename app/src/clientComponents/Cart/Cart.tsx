@@ -1,9 +1,17 @@
 "use client";
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 
 const Cart = memo(() => {
   const [cartItemsNumber, setCartItemsNumber] = useState(0);
+
+  useEffect(() => {
+    setCartItemsNumber(localStorage.cartCounter);
+
+    setInterval(function () {
+      setCartItemsNumber(localStorage.cartCounter);
+    }, 3000);
+  }, []);
 
   const cartItemsText =
     cartItemsNumber > 99 ? "+99" : cartItemsNumber.toString();
