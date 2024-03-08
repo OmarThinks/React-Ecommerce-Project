@@ -1,6 +1,6 @@
 "use client";
 import { CircleIcon, PressFiller } from "@/components";
-import { memo, useEffect, useState } from "react";
+import { memo, useCallback, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { Drawer } from "@mui/material";
 import { FaTimes } from "react-icons/fa";
@@ -8,16 +8,23 @@ import { FaTimes } from "react-icons/fa";
 const Cart = memo(() => {
   const [cartItemsNumber, setCartItemsNumber] = useState(0);
 
-  useEffect(() => {
-    setCartItemsNumber(localStorage.cartCounter);
+  const updateCartItemsNumber = useCallback(() => {
+    if (localStorage.cartCounter == null) {
+      localStorage.cartCounter = 0;
+      setCartItemsNumber(0);
+    } else {
+      setCartItemsNumber(Number(localStorage.cartCounter));
+    }
+  }, [setCartItemsNumber]);
 
+  useEffect(() => {
     setInterval(function () {
-      setCartItemsNumber(localStorage.cartCounter);
-    }, 3000);
-  }, []);
+      updateCartItemsNumber();
+    }, 2000);
+  }, [updateCartItemsNumber]);
 
   const cartItemsText =
-    Number(cartItemsNumber) > 99 ? "+99" : cartItemsNumber.toString();
+    cartItemsNumber > 99 ? "+99" : cartItemsNumber.toString();
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(true);
 
@@ -111,45 +118,6 @@ const EmptyDrawer = memo(
 );
 
 EmptyDrawer.displayName = "EmptyDrawer";
-
-/*
-          <div
-            className="absolute right-[-7px] top-[-7px] z-10 rounded-full w-[16px] h-[16px] justify-center items-center"
-            style={{ backgroundColor: "yellow", padding: 2 }}
-          >
-            <p className="text-[11px] text-center font-bold">{cartItemsText}</p>
-          </div>
-
-  return (
-    <div className="flex flex-row items-center gap-3">
-      <PressFiller
-        onClick={() => {
-          setIsDrawerOpen(true);
-        }}
-      />
-      <div className="relative">
-        <div
-          className="absolute right-[-7px] top-[-7px] z-10 rounded-full w-4 h-4 justify-center items-center"
-          style={{ backgroundColor: "yellow" }}
-        >
-          <p className="text-[11px] text-center font-bold">{cartItemsText}</p>
-        </div>
-        <div className="absolute">
-          <Drawer
-            open={isDrawerOpen}
-            onClose={() => setIsDrawerOpen(false)}
-            anchor="right"
-          >
-            <p>Hey</p>
-          </Drawer>
-        </div>
-        <FaCartShopping size={30} />
-      </div>
-      <p className="text-[20px] font-extrabold">Cart</p>
-    </div>
-  );
-
-*/
 
 Cart.displayName = "Cart";
 
