@@ -1,6 +1,6 @@
 "use client";
 import { CircleIcon } from "@/components";
-import { memo, useCallback, useState } from "react";
+import { memo, useCallback, useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 const QuantityCounter = memo(() => {
@@ -16,6 +16,10 @@ const QuantityCounter = memo(() => {
   const increment = useCallback(() => {
     setCounter(counter + 1);
   }, [counter, setCounter]);
+
+  useEffect(() => {
+    localStorage.setItem("productCounter", counter.toString());
+  }, [counter]);
 
   return (
     <div
