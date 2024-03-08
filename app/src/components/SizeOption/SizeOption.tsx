@@ -11,7 +11,7 @@ const SizeOption = memo(
         style={{ backgroundColor: bgColor, borderColor: "LightGray" }}
       >
         <p
-          className="text-[7px] font-semibold self-center text-center"
+          className="text-[9px] font-semibold self-center text-center"
           style={{ color: textColor }}
         >
           {text}

@@ -5,7 +5,13 @@ import {
   SizeOption,
   Spacer,
 } from "@components";
-import { FaChevronLeft, FaChevronRight, FaPlus, FaStar } from "react-icons/fa";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaMinus,
+  FaPlus,
+  FaStar,
+} from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
 
 export default function Home() {
@@ -23,7 +29,7 @@ export default function Home() {
             <FaChevronRight size={50} color="black" />
           </div>
         </div>
-        <div className="flex flex-col w-[500px] gap-[10px]">
+        <div className="flex flex-col w-[500px] gap-[8px]">
           <SiAdidas size={50} />
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
             Adidas black t-shirt Lorem ipsum dolor sit amet, consectetur
@@ -91,12 +97,23 @@ export default function Home() {
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
             Quantity
           </p>
-          <CircleIcon
-            Icon={FaPlus}
-            size={20}
-            bgColor="yellow"
-            iconColor="black"
-          />
+          <div
+            className="w-[150px] flex flex-row justify-between p-1 rounded-full"
+            style={{ backgroundColor: "#eee" }}
+          >
+            <CircleIcon
+              Icon={FaMinus}
+              size={20}
+              bgColor="yellow"
+              iconColor="black"
+            />
+            <CircleIcon
+              Icon={FaPlus}
+              size={20}
+              bgColor="yellow"
+              iconColor="black"
+            />
+          </div>
         </div>
       </div>
     </div>
