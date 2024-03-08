@@ -26,7 +26,7 @@ const Cart = memo(() => {
   const cartItemsText =
     cartItemsNumber > 99 ? "+99" : cartItemsNumber.toString();
 
-  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
     <div className="flex flex-row items-center gap-4 overflow-hidden relative">
@@ -172,7 +172,7 @@ const ItemsDrawer = memo(
                 </p>
               </div>
               <div
-                className="flex flex-row justify-center items-center rounded-full overflow-hidden"
+                className="flex flex-row justify-center items-center rounded-full overflow-hidden relative"
                 style={{ backgroundColor: "yellow" }}
               >
                 <PressFiller

@@ -62,11 +62,11 @@ export default function Home() {
                 className="flex flex-row gap-2 items-end"
                 style={{ color: "purple" }}
               >
-                <p className="text-[30px] font-bold">9,999</p>
+                <p className="text-[30px] font-bold">9,000</p>
                 <p className="text-[20px] font-normal">LE</p>
               </div>
               <p className="line-through" style={{ color: "grey" }}>
-                9,999 LE
+                9,000 LE
               </p>
               <p
                 className="px-2 py-1 rounded-[5px] font-medium"
