@@ -1,5 +1,11 @@
-import { ColorOption, ProductImage, SizeOption, Spacer } from "@components";
-import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
+import {
+  CircleIcon,
+  ColorOption,
+  ProductImage,
+  SizeOption,
+  Spacer,
+} from "@components";
+import { FaChevronLeft, FaChevronRight, FaPlus, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
 
 export default function Home() {
@@ -85,6 +91,12 @@ export default function Home() {
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
             Quantity
           </p>
+          <CircleIcon
+            Icon={FaPlus}
+            size={20}
+            bgColor="yellow"
+            iconColor="black"
+          />
         </div>
       </div>
     </div>
