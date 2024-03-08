@@ -24,7 +24,7 @@ const QuantityCounter = memo(() => {
   return (
     <div
       className="w-[150px] flex flex-row justify-between p-1 rounded-full items-center"
-      style={{ backgroundColor: "#eee" }}
+      style={{ backgroundColor: "#eee", width: 150, padding: 4 }}
     >
       <CircleIcon
         Icon={FaMinus}
