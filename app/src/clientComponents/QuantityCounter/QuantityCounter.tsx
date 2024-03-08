@@ -1,10 +1,21 @@
 "use client";
 import { CircleIcon } from "@/components";
-import { memo, useState } from "react";
+import { memo, useCallback, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 const QuantityCounter = memo(() => {
   const [counter, setCounter] = useState(1);
+
+  const decrement = useCallback(() => {
+    if (counter === 0) {
+      return;
+    }
+    setCounter(counter - 1);
+  }, [counter, setCounter]);
+
+  const increment = useCallback(() => {
+    setCounter(counter + 1);
+  }, [counter, setCounter]);
 
   return (
     <div
@@ -16,9 +27,7 @@ const QuantityCounter = memo(() => {
         size={20}
         bgColor="yellow"
         iconColor="black"
-        onClick={() => {
-          setCounter(counter - 1);
-        }}
+        onClick={decrement}
       />
       <p className="text-[13px] font-bold" style={{ color: "purple" }}>
         {counter}
@@ -28,9 +37,7 @@ const QuantityCounter = memo(() => {
         size={20}
         bgColor="yellow"
         iconColor="black"
-        onClick={() => {
-          setCounter(counter + 1);
-        }}
+        onClick={increment}
       />
     </div>
   );
