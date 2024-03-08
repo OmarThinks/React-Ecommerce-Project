@@ -9,13 +9,23 @@ const imageLinks = [
 ];
 
 const ProductImage = memo(
-  ({ size, imageNumnber }: { size: number; imageNumnber: 0 | 1 | 2 | 3 }) => {
+  ({
+    size,
+    imageNumnber,
+    borderRadius = 0,
+  }: {
+    size: number;
+    imageNumnber: 0 | 1 | 2 | 3;
+    borderRadius?: number;
+  }) => {
     return (
       <Image
         width={size}
         height={size}
         src={imageLinks[imageNumnber]}
         alt="shirt-1"
+        style={{ borderRadius }}
+        className="overflow-hidden"
       />
     );
   }

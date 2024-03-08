@@ -6,19 +6,28 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 export default function Home() {
   return (
     <div className="flex-col">
-      <div className="flex-row">
+      <div className="flex flex-row gap-[50px]">
         <div className="flex flex-col gap-[10px]">
-          <ProductImage size={500} imageNumnber={0} />
+          <ProductImage size={500} imageNumnber={0} borderRadius={10} />
           <div className="flex flex-row gap-[10px] items-center">
             <FaChevronLeft size={50} color="black" />
-            <ProductImage size={90} imageNumnber={0} />
-            <ProductImage size={90} imageNumnber={1} />
-            <ProductImage size={90} imageNumnber={2} />
-            <ProductImage size={90} imageNumnber={3} />
+            <ProductImage size={90} imageNumnber={0} borderRadius={5} />
+            <ProductImage size={90} imageNumnber={1} borderRadius={5} />
+            <ProductImage size={90} imageNumnber={2} borderRadius={5} />
+            <ProductImage size={90} imageNumnber={3} borderRadius={5} />
             <FaChevronRight size={50} color="black" />
           </div>
         </div>
-        <div className="flex-col"></div>
+        <div className="flex flex-col w-[500px] gap-[10px]">
+          <SiAdidas size={50} />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Adidas black t-shirt Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <p className="text-[15px] font-bold" style={{ color: "grey" }}>
+            Men
+          </p>
+        </div>
       </div>
     </div>
   );
