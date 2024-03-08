@@ -99,7 +99,7 @@ export default function Home() {
             Quantity
           </p>
           <div
-            className="w-[150px] flex flex-row justify-between p-1 rounded-full"
+            className="w-[150px] flex flex-row justify-between p-1 rounded-full items-center"
             style={{ backgroundColor: "#eee" }}
           >
             <CircleIcon
@@ -108,6 +108,9 @@ export default function Home() {
               bgColor="yellow"
               iconColor="black"
             />
+            <p className="text-[13px] font-bold" style={{ color: "purple" }}>
+              1
+            </p>
             <CircleIcon
               Icon={FaPlus}
               size={20}
@@ -118,15 +121,15 @@ export default function Home() {
           <div className="flex flex-row justify-between gap-4">
             <Button
               style={{ flex: 1 }}
-              text={"button 1"}
-              bgColor="green"
-              textColor="magenta"
+              text={"Add To Cart"}
+              bgColor="purple"
+              textColor="white"
             />
             <Button
               style={{ flex: 1 }}
-              text={"button 2"}
-              bgColor="green"
-              textColor="magenta"
+              text={"Pickup From Store"}
+              bgColor="yellow"
+              textColor="black"
             />
           </div>
         </div>

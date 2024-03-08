@@ -18,7 +18,12 @@ const Button = memo(
         style={{ ...style, backgroundColor: bgColor }}
         className="h-10 items-center justify-center flex rounded-full"
       >
-        <p className="text-center">{text}</p>
+        <p
+          className="text-center text-[15px] font-semibold"
+          style={{ color: textColor }}
+        >
+          {text}
+        </p>
       </div>
     );
   }
