@@ -10,7 +10,7 @@ export default function Home() {
       <div className="flex-row">
         <div className="flex-col">
           <Image width={500} height={500} src="/shirt-1.jpeg" alt="shirt-1" />
-          <ProductImage />
+          <ProductImage size={500} imageNumnber={0} />
           <div className="flex-row gap-[10px] items-center"></div>
         </div>
         <div className="flex-col"></div>
