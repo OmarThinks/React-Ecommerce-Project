@@ -26,7 +26,7 @@ export default function Home() {
           <p className="text-[15px] font-bold" style={{ color: "grey" }}>
             Men
           </p>
-          <div className="flex flex-row gap-4 items-center flex-wrap">
+          <div className="flex flex-row gap-2.5 items-center flex-wrap">
             <div className="flex flex-row gap-1">
               <FaStar size={20} color="gold" />
               <FaStar size={20} color="gold" />
@@ -83,23 +83,7 @@ export default function Home() {
           </div>
           <Spacer />
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
-            Size
-          </p>
-          <Spacer />
-          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
-            Size
-          </p>
-          <Spacer />
-          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
-            Size
-          </p>
-          <Spacer />
-          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
-            Size
-          </p>
-          <Spacer />
-          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
-            Size
+            Quantity
           </p>
         </div>
       </div>
