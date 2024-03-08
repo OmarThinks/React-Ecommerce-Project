@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <Spacer />
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
-            Size
+            Color
           </p>
           <Spacer />
           <p className="text-[20px] font-semibold" style={{ color: "black" }}>
