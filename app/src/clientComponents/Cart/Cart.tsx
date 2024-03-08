@@ -1,8 +1,9 @@
 "use client";
-import { PressFiller } from "@/components";
+import { CircleIcon, PressFiller } from "@/components";
 import { memo, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { Drawer } from "@mui/material";
+import { FaTimes } from "react-icons/fa";
 
 const Cart = memo(() => {
   const [cartItemsNumber, setCartItemsNumber] = useState(0);
@@ -18,7 +19,7 @@ const Cart = memo(() => {
   const cartItemsText =
     Number(cartItemsNumber) > 99 ? "+99" : cartItemsNumber.toString();
 
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
 
   return (
     <div className="flex flex-row items-center gap-4 overflow-hidden relative">
@@ -50,10 +51,10 @@ const Cart = memo(() => {
         <div className="absolute">
           <Drawer
             open={isDrawerOpen}
-            onClose={() => setIsDrawerOpen(false)}
+            //onClose={() => setIsDrawerOpen(false)}
             anchor="right"
           >
-            <p>Hey</p>
+            <EmptyDrawer setIsDrawerOpen={setIsDrawerOpen} />
           </Drawer>
         </div>
         <FaCartShopping size={30} />
@@ -63,9 +64,55 @@ const Cart = memo(() => {
   );
 });
 
+const EmptyDrawer = memo(
+  ({ setIsDrawerOpen }: { setIsDrawerOpen: (a: boolean) => void }) => {
+    return (
+      <div
+        className="w-[500px]"
+        style={{
+          width: 500,
+          display: "flex",
+          flexDirection: "column",
+          padding: 15,
+          gap: 20,
+        }}
+      >
+        <div className="self-end" style={{ alignSelf: "flex-end" }}>
+          <CircleIcon
+            Icon={FaTimes}
+            size={50}
+            bgColor="transparent"
+            iconColor="gray"
+            onClick={() => setIsDrawerOpen(false)}
+          />
+        </div>
+        <div
+          className="text-center"
+          style={{ fontSize: 20, fontWeight: "bold", color: "purple" }}
+        >
+          My cart
+        </div>
+        <div style={{ fontSize: 14, fontWeight: "600", color: "black" }}>
+          Cart Summary
+        </div>
+        <div
+          style={{
+            fontSize: 14,
+            fontWeight: "600",
+            color: "black",
+            textAlign: "center",
+          }}
+        >
+          You have no items yet..
+        </div>
+      </div>
+    );
+  }
+);
+
+EmptyDrawer.displayName = "EmptyDrawer";
+
 /*
-
-
           <div
             className="absolute right-[-7px] top-[-7px] z-10 rounded-full w-[16px] h-[16px] justify-center items-center"
             style={{ backgroundColor: "yellow", padding: 2 }}
