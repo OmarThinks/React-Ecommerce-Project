@@ -1,8 +1,6 @@
-import Image from "next/image";
+import { ProductImage, Spacer } from "@components";
+import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
-import { ProductImage } from "@components";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -64,6 +62,7 @@ export default function Home() {
               30% Off
             </p>
           </div>
+          <Spacer />
         </div>
       </div>
     </div>
