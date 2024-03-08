@@ -1,17 +1,22 @@
 import Image from "next/image";
 import { SiAdidas } from "react-icons/si";
-import { memo, useState } from "react";
 import { ProductImage } from "@components";
-//import { ProductImage } from "@/components/index";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="flex-col">
       <div className="flex-row">
-        <div className="flex-col">
-          <Image width={500} height={500} src="/shirt-1.jpeg" alt="shirt-1" />
+        <div className="flex flex-col gap-[10px]">
           <ProductImage size={500} imageNumnber={0} />
-          <div className="flex-row gap-[10px] items-center"></div>
+          <div className="flex flex-row gap-[10px] items-center">
+            <FaChevronLeft size={50} color="black" />
+            <ProductImage size={90} imageNumnber={0} />
+            <ProductImage size={90} imageNumnber={1} />
+            <ProductImage size={90} imageNumnber={2} />
+            <ProductImage size={90} imageNumnber={3} />
+            <FaChevronRight size={50} color="black" />
+          </div>
         </div>
         <div className="flex-col"></div>
       </div>
