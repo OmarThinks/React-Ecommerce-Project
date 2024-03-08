@@ -1,7 +1,19 @@
 import Image from "next/image";
+import { SiAdidas } from "react-icons/si";
+import { memo, useState } from "react";
 
 export default function Home() {
-  return <div className="">Hi</div>;
+  return (
+    <div className="flex-col">
+      <div className="flex-row">
+        <div className="flex-col">
+          <Image width={500} height={500} src="/shirt-1.jpeg" alt="shirt-1" />
+          <div className="flex-row gap-[10px] items-center"></div>
+        </div>
+        <div className="flex-col"></div>
+      </div>
+    </div>
+  );
 }
 
 /*
