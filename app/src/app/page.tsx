@@ -2,14 +2,15 @@ import Image from "next/image";
 import { SiAdidas } from "react-icons/si";
 import { ProductImage } from "@components";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="flex-col">
-      <div className="flex flex-row gap-[50px]">
+      <div className="flex flex-row gap-[50px] flex-wrap">
         <div className="flex flex-col gap-[10px]">
           <ProductImage size={500} imageNumnber={0} borderRadius={10} />
-          <div className="flex flex-row gap-[10px] items-center">
+          <div className="flex flex-row gap-[10px] items-center flex-wrap">
             <FaChevronLeft size={50} color="black" />
             <ProductImage size={90} imageNumnber={0} borderRadius={5} />
             <ProductImage size={90} imageNumnber={1} borderRadius={5} />
@@ -27,6 +28,42 @@ export default function Home() {
           <p className="text-[15px] font-bold" style={{ color: "grey" }}>
             Men
           </p>
+          <div className="flex flex-row gap-4 items-center flex-wrap">
+            <div className="flex flex-row gap-1">
+              <FaStar size={20} color="gold" />
+              <FaStar size={20} color="gold" />
+              <FaStar size={20} color="gold" />
+              <FaStar size={20} color="gold" />
+              <FaStar size={20} color="gold" />
+            </div>
+            <p
+              className="text-[20px] font-extrabold"
+              style={{ color: "black" }}
+            >
+              4.9 of 5
+            </p>
+            <p className="text-[13px] font-bold" style={{ color: "grey" }}>
+              22 rates
+            </p>
+          </div>
+          <div className="flex flex-row flex-wrap gap-8 items-center">
+            <div
+              className="flex flex-row gap-2 items-end"
+              style={{ color: "purple" }}
+            >
+              <p className="text-[30px] font-bold">9,999</p>
+              <p className="text-[20px] font-normal">LE</p>
+            </div>
+            <p className="line-through" style={{ color: "grey" }}>
+              9,999 LE
+            </p>
+            <p
+              className="px-2 py-1 rounded-[5px] font-medium"
+              style={{ background: "gold", color: "black" }}
+            >
+              30% Off
+            </p>
+          </div>
         </div>
       </div>
     </div>
