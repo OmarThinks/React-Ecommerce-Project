@@ -38,22 +38,9 @@ const Cart = memo(() => {
       <div className="relative m-2" style={{ margin: 8 }}>
         <div
           className="absolute right-[-7px] top-[-7px] z-10 rounded-full w-4 h-4 justify-center items-center"
-          style={{
-            backgroundColor: "yellow",
-            right: -7,
-            top: -7,
-            width: 16,
-            height: 16,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+          style={{ backgroundColor: "yellow" }}
         >
-          <p
-            className="text-[11px] text-center font-bold"
-            style={{ fontSize: 9 }}
-          >
-            {cartItemsText}
-          </p>
+          <p className="text-[9px] text-center font-bold">{cartItemsText}</p>
         </div>
         <div className="absolute">
           <Drawer
@@ -81,17 +68,8 @@ const Cart = memo(() => {
 const EmptyDrawer = memo(
   ({ setIsDrawerOpen }: { setIsDrawerOpen: (a: boolean) => void }) => {
     return (
-      <div
-        className="w-[500px]"
-        style={{
-          width: 500,
-          display: "flex",
-          flexDirection: "column",
-          padding: 15,
-          gap: 20,
-        }}
-      >
-        <div className="self-end" style={{ alignSelf: "flex-end" }}>
+      <div className="w-[500px] flex flex-col p-[15px] gap-5">
+        <div className="self-end">
           <CircleIcon
             Icon={FaTimes}
             size={50}
@@ -101,20 +79,18 @@ const EmptyDrawer = memo(
           />
         </div>
         <div
-          className="text-center"
-          style={{ fontSize: 20, fontWeight: "bold", color: "purple" }}
+          className="text-center text-[20px] font-bold"
+          style={{ color: "purple" }}
         >
           My cart
         </div>
-        <div style={{ fontSize: 14, fontWeight: "600", color: "black" }}>
+        <div className="text-[14px] font-semibold" style={{ color: "black" }}>
           Cart Summary
         </div>
         <div
+          className="text-[14px] font-semibold text-center"
           style={{
-            fontSize: 14,
-            fontWeight: "600",
             color: "black",
-            textAlign: "center",
           }}
         >
           You have no items yet..
@@ -135,17 +111,8 @@ const ItemsDrawer = memo(
     cartItemsNumber: number;
   }) => {
     return (
-      <div
-        className="w-[500px]"
-        style={{
-          width: 500,
-          display: "flex",
-          flexDirection: "column",
-          padding: 15,
-          gap: 20,
-        }}
-      >
-        <div className="self-end" style={{ alignSelf: "flex-end" }}>
+      <div className="w-[500px] flex flex-col p-[15px] gap-5">
+        <div className="self-end">
           <CircleIcon
             Icon={FaTimes}
             size={50}
@@ -155,37 +122,39 @@ const ItemsDrawer = memo(
           />
         </div>
         <div
-          className="text-center"
-          style={{ fontSize: 20, fontWeight: "bold", color: "purple" }}
+          className="text-center text-[20px] font-bold"
+          style={{ color: "purple" }}
         >
           My cart
         </div>
-        <div style={{ fontSize: 14, fontWeight: "600", color: "black" }}>
+        <div className="text-[14px] font-semibold" style={{ color: "black" }}>
           Cart Summary
         </div>
         <div
+          className="text-[18px] font-bold text-center"
           style={{
-            fontSize: 18,
-            fontWeight: "700",
             color: "black",
-            textAlign: "center",
           }}
         >
           Total: {cartItemsNumber * 9000} LE
         </div>
         <div
+          className="rounded-[18px] border-[1px] p-[10px] self-stretch flex flex-row gap-[15px]"
           style={{
-            borderRadius: 10,
-            borderWidth: 1,
             borderColor: "lightgray",
-            padding: 10,
-            alignSelf: "stretch",
-            display: "flex",
-            flexDirection: "row",
-            gap: 15,
           }}
         >
-          <ProductImage />
+          <ProductImage size={100} imageNumnber={0} borderRadius={10} />
+          <div className="flex-1 self-stretch flex flex-col gap-[10px]">
+            <p className="text-[16px] font-semibold" style={{ color: "black" }}>
+              Adidas black t-shirt Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p className="text-[14px] font-semibold" style={{ color: "gray" }}>
+              Quantity: {cartItemsNumber}
+            </p>
+            <div style={{}}></div>
+          </div>
         </div>
 
         <div className="flex flex-row justify-between gap-4">
