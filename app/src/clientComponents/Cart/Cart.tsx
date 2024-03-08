@@ -45,13 +45,14 @@ const Cart = memo(() => {
         <div className="absolute">
           <Drawer
             open={isDrawerOpen}
-            //onClose={() => setIsDrawerOpen(false)}
+            onClose={() => setIsDrawerOpen(false)}
             anchor="right"
           >
             {cartItemsNumber !== 0 ? (
               <ItemsDrawer
                 setIsDrawerOpen={setIsDrawerOpen}
                 cartItemsNumber={cartItemsNumber}
+                setCartItemsNumber={setCartItemsNumber}
               />
             ) : (
               <EmptyDrawer setIsDrawerOpen={setIsDrawerOpen} />
@@ -106,9 +107,11 @@ const ItemsDrawer = memo(
   ({
     setIsDrawerOpen,
     cartItemsNumber,
+    setCartItemsNumber,
   }: {
     setIsDrawerOpen: (a: boolean) => void;
     cartItemsNumber: number;
+    setCartItemsNumber: (a: number) => void;
   }) => {
     return (
       <div className="w-[500px] flex flex-col p-[15px] gap-5">
@@ -153,7 +156,39 @@ const ItemsDrawer = memo(
             <p className="text-[14px] font-semibold" style={{ color: "gray" }}>
               Quantity: {cartItemsNumber}
             </p>
-            <div style={{}}></div>
+            <div className="flex flex-row justify-between items-center">
+              <div className="flex flex-row gap-1 items-end">
+                <p
+                  className="text-[16px] font-semibold"
+                  style={{ color: "purple" }}
+                >
+                  9000
+                </p>
+                <p
+                  className="text-[10px] font-normal"
+                  style={{ color: "purple" }}
+                >
+                  LE
+                </p>
+              </div>
+              <div
+                className="flex flex-row justify-center items-center rounded-full overflow-hidden"
+                style={{ backgroundColor: "yellow" }}
+              >
+                <PressFiller
+                  onClick={() => {
+                    setCartItemsNumber(0);
+                    localStorage.cartCounter = 0;
+                  }}
+                />
+                <p
+                  style={{ color: "black" }}
+                  className="mx-7 my-3 font-semibold"
+                >
+                  Remove
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
