@@ -1,5 +1,5 @@
 "use client";
-import { memo, useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 
 const Cart = memo(() => {
