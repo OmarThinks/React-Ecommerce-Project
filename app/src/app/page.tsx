@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { SiAdidas } from "react-icons/si";
 import { memo, useState } from "react";
+import { ProductImage } from "@components";
+//import { ProductImage } from "@/components/index";
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <div className="flex-row">
         <div className="flex-col">
           <Image width={500} height={500} src="/shirt-1.jpeg" alt="shirt-1" />
+          <ProductImage />
           <div className="flex-row gap-[10px] items-center"></div>
         </div>
         <div className="flex-col"></div>
@@ -15,6 +18,8 @@ export default function Home() {
     </div>
   );
 }
+
+//const ProductImage = memo(({}) => {});
 
 /*
    <main className="flex min-h-screen flex-col items-center justify-between p-24">
