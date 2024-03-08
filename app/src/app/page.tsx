@@ -15,12 +15,13 @@ import {
 } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
 import { FaCartShopping } from "react-icons/fa6";
+import { AddToCart } from "@/clientComponents";
 
 export default function Home() {
   return (
     <div className="flex flex-col self-stretch items-center">
       <div className="max-w-[1100px]">
-        <div className="self-stretch flex-row flex justify-between bg-slate-400 items-center">
+        <div className="self-stretch flex-row flex justify-between items-center">
           <div className="w-[60px]" />
           <SiAdidas size={60} />
           <div className="flex flex-row items-center gap-3">
@@ -137,12 +138,7 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-row justify-between gap-4">
-              <Button
-                style={{ flex: 1 }}
-                text={"Add To Cart"}
-                bgColor="purple"
-                textColor="white"
-              />
+              <AddToCart />
               <Button
                 style={{ flex: 1 }}
                 text={"Pickup From Store"}
