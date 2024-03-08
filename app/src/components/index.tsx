@@ -1,4 +1,5 @@
 import ProductImage from "./ProductImage/ProductImage";
+import SizeOption from "./SizeOption/SizeOption";
 import Spacer from "./Spacer/Spacer";
 
-export { ProductImage, Spacer };
+export { ProductImage, SizeOption, Spacer };

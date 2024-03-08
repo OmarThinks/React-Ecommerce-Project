@@ -63,6 +63,40 @@ export default function Home() {
             </p>
           </div>
           <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
+          <div className="flex flex-row gap-[15px]">
+            <p>Small</p>
+            <p>Medium</p>
+            <p>Large</p>
+            <p>X Large</p>
+            <p>XX Large</p>
+          </div>
+          <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
+          <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
+          <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
+          <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
+          <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
+          <Spacer />
+          <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            Size
+          </p>
         </div>
       </div>
     </div>
