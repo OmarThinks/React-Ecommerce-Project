@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components";
-import React, { memo } from "react";
+import { memo } from "react";
 
 const AddToCart = memo(() => {
   return (

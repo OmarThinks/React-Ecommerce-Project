@@ -1,21 +1,13 @@
+import { AddToCart, Cart, QuantityCounter } from "@/clientComponents";
 import {
   Button,
-  CircleIcon,
   ColorOption,
   ProductImage,
   SizeOption,
   Spacer,
 } from "@components";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-  FaMinus,
-  FaPlus,
-  FaStar,
-} from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
-import { FaCartShopping } from "react-icons/fa6";
-import { AddToCart, Cart } from "@/clientComponents";
 
 export default function Home() {
   return (
@@ -106,26 +98,8 @@ export default function Home() {
             <p className="text-[20px] font-semibold" style={{ color: "black" }}>
               Quantity
             </p>
-            <div
-              className="w-[150px] flex flex-row justify-between p-1 rounded-full items-center"
-              style={{ backgroundColor: "#eee" }}
-            >
-              <CircleIcon
-                Icon={FaMinus}
-                size={20}
-                bgColor="yellow"
-                iconColor="black"
-              />
-              <p className="text-[13px] font-bold" style={{ color: "purple" }}>
-                1
-              </p>
-              <CircleIcon
-                Icon={FaPlus}
-                size={20}
-                bgColor="yellow"
-                iconColor="black"
-              />
-            </div>
+            <QuantityCounter />
+
             <div className="flex flex-row justify-between gap-4">
               <AddToCart />
               <Button

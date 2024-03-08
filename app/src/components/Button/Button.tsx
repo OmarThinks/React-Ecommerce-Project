@@ -1,5 +1,5 @@
-import React, { memo } from "react";
 import CSS from "csstype";
+import { memo } from "react";
 
 const Button = memo(
   ({
