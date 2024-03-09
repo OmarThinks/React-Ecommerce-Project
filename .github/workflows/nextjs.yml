@@ -50,7 +50,6 @@ jobs:
             exit 1
           fi
       - name: Setup Node
-        working-directory: ./app
         uses: actions/setup-node@v4
         with:
           node-version: "20"
