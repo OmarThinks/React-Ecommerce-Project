@@ -122,7 +122,7 @@ export default function Home() {
                 style={{ flex: 1 }}
                 text={"Pickup From Store"}
                 bgColor={colors.secondaryColor}
-                textColor={colors.normalText}
+                textColor={colors.onSecondary}
               />
             </div>
           </div>

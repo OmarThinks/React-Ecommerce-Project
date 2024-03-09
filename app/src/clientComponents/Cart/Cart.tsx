@@ -3,6 +3,7 @@ import { PressFiller } from "@/components";
 import { Drawer } from "@mui/material";
 import { Suspense, lazy, memo, useCallback, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
+import colors from "@colors";
 
 const ItemsDrawer = lazy(() => import("../ItemsDrawer/ItemsDrawer"));
 const EmptyDrawer = lazy(() => import("../EmptyDrawer/EmptyDrawer"));
@@ -40,9 +41,14 @@ const Cart = memo(() => {
       <div className="relative m-2" style={{ margin: 8 }}>
         <div
           className="absolute right-[-7px] top-[-7px] z-10 rounded-full w-4 h-4 justify-center items-center"
-          style={{ backgroundColor: "yellow" }}
+          style={{ backgroundColor: colors.badgeBg }}
         >
-          <p className="text-[9px] text-center font-bold">{cartItemsText}</p>
+          <p
+            className="text-[9px] text-center font-bold"
+            style={{ color: colors.onBadge }}
+          >
+            {cartItemsText}
+          </p>
         </div>
         <div className="absolute">
           <Drawer

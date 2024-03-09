@@ -2,6 +2,7 @@
 import { CircleIcon } from "@/components";
 import { memo, useCallback, useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import colors from "@colors";
 
 const QuantityCounter = memo(() => {
   const [counter, setCounter] = useState(1);
@@ -29,18 +30,21 @@ const QuantityCounter = memo(() => {
       <CircleIcon
         Icon={FaMinus}
         size={20}
-        bgColor="yellow"
-        iconColor="black"
+        bgColor={colors.secondaryColor}
+        iconColor={colors.onSecondary}
         onClick={decrement}
       />
-      <p className="text-[13px] font-bold" style={{ color: "purple" }}>
+      <p
+        className="text-[13px] font-bold"
+        style={{ color: colors.primaryColor }}
+      >
         {counter}
       </p>
       <CircleIcon
         Icon={FaPlus}
         size={20}
-        bgColor="yellow"
-        iconColor="black"
+        bgColor={colors.secondaryColor}
+        iconColor={colors.onSecondary}
         onClick={increment}
       />
     </div>

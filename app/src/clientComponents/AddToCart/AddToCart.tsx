@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@components";
 import { memo } from "react";
+import colors from "@colors";
 
 const addTocart = () => {
   console.log(localStorage.cartCounter);
@@ -17,8 +18,8 @@ const AddToCart = memo(() => {
     <Button
       style={{ flex: 1 }}
       text={"Add To Cart"}
-      bgColor="purple"
-      textColor="white"
+      bgColor={colors.primaryColor}
+      textColor={colors.onPrimary}
       onClick={addTocart}
     />
   );

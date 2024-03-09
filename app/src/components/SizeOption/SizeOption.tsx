@@ -1,14 +1,15 @@
 import React, { memo } from "react";
+import colors from "@colors";
 
 const SizeOption = memo(
   ({ text, isChosen }: { text: string; isChosen: boolean }) => {
-    const textColor = isChosen ? "black" : "purple";
-    const bgColor = isChosen ? "LightGray" : "transparent";
+    const textColor = isChosen ? colors.normalText : colors.primaryColor;
+    const bgColor = isChosen ? colors.lightGray : colors.appBg;
 
     return (
       <div
         className="w-12 h-12 rounded-full items-center content-center flex justify-center border-[1px]"
-        style={{ backgroundColor: bgColor, borderColor: "LightGray" }}
+        style={{ backgroundColor: bgColor, borderColor: colors.lightGray }}
       >
         <p
           className="text-[9px] font-semibold self-center text-center"
