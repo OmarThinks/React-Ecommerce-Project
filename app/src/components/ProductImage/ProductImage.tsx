@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { memo } from "react";
-//import Image0 from ""
+import Image0 from "@images/shirt-1.jpeg";
+import Image1 from "@images/shirt-2.jpg";
+import Image2 from "@images/shirt-3.jpg";
+import Image3 from "@images/shirt-4.jpg";
 
-const imageLinks = [
-  "/shirt-1.jpeg",
-  "/shirt-2.jpg",
-  "/shirt-3.jpg",
-  "/shirt-4.jpg",
-];
+const imageLinks2 = [Image0, Image1, Image2, Image3];
 
 const ProductImage = memo(
   ({
@@ -21,11 +19,11 @@ const ProductImage = memo(
   }) => {
     return (
       <Image
-        width={size}
-        height={size}
-        src={imageLinks[imageNumnber]}
+        //width={size}
+        //height={size}
+        src={imageLinks2[imageNumnber]}
         alt="shirt-1"
-        style={{ borderRadius }}
+        style={{ borderRadius, width: size, height: size }}
         className="overflow-hidden"
       />
     );

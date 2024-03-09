@@ -131,11 +131,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Image
-        src={Image1} //size={300}
-        style={{ width: 200, height: 200 }}
-        alt="just an image"
-      />
     </div>
   );
 }

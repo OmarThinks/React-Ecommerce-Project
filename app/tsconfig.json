@@ -21,7 +21,8 @@
       //"@/*": ["./src/*"],
       "@components": ["./src/components/index.tsx"],
       "@clientComponents": ["./src/clientComponents/index.tsx"],
-      "@colors": ["./src/theme/colors.tsx"]
+      "@colors": ["./src/theme/colors.tsx"],
+      "@images/*": ["./src/images/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
