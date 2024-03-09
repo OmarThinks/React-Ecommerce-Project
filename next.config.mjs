@@ -7,7 +7,7 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   reactStrictMode: true,
-  //basePath: "./",
+  basePath: "/React-Ecommerce-Project",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
