@@ -27,7 +27,7 @@
 <tr>
 <td>4</td>
 <td>YouTube</td>
-<td> ... </td>
+<td>https://www.youtube.com/watch?v=GliIv8d2Dis</td>
 </tr>
 </table>
 
@@ -76,7 +76,7 @@ The task is to implement this design in react following these rules:
 - Should use lazy loading at least at one component. ✅ (1/1)
   - Used for `ItemsDrawer:` https://github.com/OmarThinks/React-Ecommerce-Project/blob/11bd32d7889496e364f156484c95a883d8f469da/src/clientComponents/Cart/Cart.tsx#L8
   - Used for `ItemsDrawer:` https://github.com/OmarThinks/React-Ecommerce-Project/blob/11bd32d7889496e364f156484c95a883d8f469da/src/clientComponents/Cart/Cart.tsx#L9
-- Shouldn't use hooks. ⚠️ (.5/1)
+- Shouldn't use hooks. ⚠️ (0.5/1)
   - I only used Hooks in Client Components, they are 5 components
   - I tried to use minimal Hooks as much as I could
 - Shouldn't use redux. ✅ (1/1)
@@ -98,4 +98,4 @@ The task is to implement this design in react following these rules:
 
 # 16.5/18
 
-I completed 16.5 items out of the 18 items required. Thats `91.66%`.
+I completed 16.5 items out of the 18 items required. Thats **`91.66%`**.
