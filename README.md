@@ -2,11 +2,49 @@
 
 # A) Links:
 
-<table></table>
+<table>
+<tr>
+<th>Number</th>
+<th>Platform</th>
+<th>Link</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>GitHub Pages</td>
+<td>https://omarthinks.github.io/React-Ecommerce-Project/</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GitHub Repository (and Docs)</td>
+<td>https://github.com/OmarThinks/React-Ecommerce-Project</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Adobe XD Design</td>
+<td>https://xd.adobe.com/view/2186e175-b022-45db-a2f4-c9ba6e4bde30-74d5/</td>
+</tr>
+<tr>
+<td>4</td>
+<td>YouTube</td>
+<td> ... </td>
+</tr>
+</table>
 
 # B) About
 
+A task for A React Ecommerce Project.
+
 # C) Images
+
+<img src="./media/home.png" width=500/>
+Home Screens
+
+<img src="./media/drawer-empty.png" width=500/>
+Empty Drawer
+
+<img src="./media/drawer-full.png" width=500/>
+Drawer with an Item
 
 # D) Score:
 
