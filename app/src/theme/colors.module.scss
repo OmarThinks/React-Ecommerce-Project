@@ -1,0 +1,25 @@
+$primary-color: purple;
+$on-primary: white;
+$secondary-color: yellow;
+$on-secondary: black;
+$normal-text: black;
+$gold: gold;
+$gray: gray;
+$app-bg: white;
+$badge-bg: yellow;
+$on-badge: black;
+$light-gray: lightgray;
+
+:export {
+  primaryColor: $primary-color;
+  onPrimary: $on-primary;
+  secondaryColor: $secondary-color;
+  onSecondary: $on-secondary;
+  normalText: $normal-text;
+  gold: $gold;
+  gray: $gray;
+  appBg: $app-bg;
+  badgeBg: $badge-bg;
+  onBadge: $on-badge;
+  lightGray: $light-gray;
+}

@@ -11,7 +11,7 @@ The task is to implement this design in react following these rules:
   - I am specialized React Native developer. So I don't use SASS
 - Folder structure:
   - public/images for static images. ✅ (1/1)
-  - src/images for dynamic images (dummy data images). ⚠️ (0/1)
+  - src/images for dynamic images (dummy data images). ✅ (1/1)
   - src/services for api calls (dummy data for the test).
   - src/components for other react components. ✅ (1/1)
   - src/pages for router pages. ✅ (1/1)
