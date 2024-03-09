@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { memo } from "react";
-import Image0 from "@images/shirt-1.jpeg";
-import Image1 from "@images/shirt-2.jpg";
-import Image2 from "@images/shirt-3.jpg";
-import Image3 from "@images/shirt-4.jpg";
+import image0 from "@images/shirt1.jpeg";
+import image1 from "@images/shirt2.jpg";
+import image2 from "@images/shirt3.jpg";
+import image3 from "@images/shirt4.jpg";
 
-const imageLinks2 = [Image0, Image1, Image2, Image3];
+const imageLinks2 = [image0, image1, image2, image3];
 
 const ProductImage = memo(
   ({

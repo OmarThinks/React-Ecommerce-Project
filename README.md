@@ -7,7 +7,7 @@ The task is to implement this design in react following these rules:
 - File types should be js + jsx ✅ (1/1)
   - Not only js and jsx, but actually all the files are `.tsx`
   - This means that I've used TypeScript for type safety
-- File types should be scss ⚠️ (0/1)
+- File types should be scss ✅ (1/1)
   - I am specialized React Native developer. So I don't use SASS
 - Folder structure:
   - public/images for static images. ✅ (1/1)
