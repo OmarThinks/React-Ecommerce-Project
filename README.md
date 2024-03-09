@@ -1,5 +1,15 @@
 # React-Ecommerce-Task
 
+# A) Links:
+
+<table></table>
+
+# B) About
+
+# C) Images
+
+# D) Score:
+
 Building an Ecommerce Application using React for a task
 
 The task is to implement this design in react following these rules:
