@@ -10,9 +10,6 @@ import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
 import colors from "@colors";
 
-import Image1 from "../../public/shirt-1.jpeg";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="flex flex-col self-stretch items-center">
