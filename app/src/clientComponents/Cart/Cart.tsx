@@ -1,7 +1,7 @@
 "use client";
 import { PressFiller } from "@/components";
 import { Drawer } from "@mui/material";
-import { lazy, memo, useCallback, useEffect, useState } from "react";
+import { Suspense, lazy, memo, useCallback, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 
 const ItemsDrawer = lazy(() => import("../ItemsDrawer/ItemsDrawer"));
@@ -51,13 +51,17 @@ const Cart = memo(() => {
             anchor="right"
           >
             {cartItemsNumber !== 0 ? (
-              <ItemsDrawer
-                setIsDrawerOpen={setIsDrawerOpen}
-                cartItemsNumber={cartItemsNumber}
-                setCartItemsNumber={setCartItemsNumber}
-              />
+              <Suspense fallback={<h1>Loading ...</h1>}>
+                <ItemsDrawer
+                  setIsDrawerOpen={setIsDrawerOpen}
+                  cartItemsNumber={cartItemsNumber}
+                  setCartItemsNumber={setCartItemsNumber}
+                />
+              </Suspense>
             ) : (
-              <EmptyDrawer setIsDrawerOpen={setIsDrawerOpen} />
+              <Suspense fallback={<h1>Loading ...</h1>}>
+                <EmptyDrawer setIsDrawerOpen={setIsDrawerOpen} />
+              </Suspense>
             )}
           </Drawer>
         </div>
