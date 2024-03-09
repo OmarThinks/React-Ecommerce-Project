@@ -31,4 +31,4 @@ The task is to implement this design in react following these rules:
 - Task should be delivered as a github public repository ✅ (1/1)
 - Task should be deployed to github pages ⚠️ (0/1)
 
-https://github.com/OmarThinks/React-Ecommerce-Project/blob/c4050dbb49739c5328a7032721276397596a743a/app/src/clientComponents/Cart/Cart.tsx#L60
+https://github.com/OmarThinks/React-Ecommerce-Project/blob/c4050dbb49739c5328a7032721276397596a743a/app/src/clientComponents/Cart/Cart.tsx#L61
