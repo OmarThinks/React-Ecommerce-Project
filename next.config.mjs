@@ -6,6 +6,7 @@ const __dirname = path.resolve();
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
+  reactStrictMode: true,
   //basePath: "./",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
