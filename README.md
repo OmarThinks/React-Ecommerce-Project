@@ -78,6 +78,7 @@ The task is to implement this design in react following these rules:
   - Used for `ItemsDrawer:` https://github.com/OmarThinks/React-Ecommerce-Project/blob/11bd32d7889496e364f156484c95a883d8f469da/src/clientComponents/Cart/Cart.tsx#L9
 - Shouldn't use hooks. ⚠️ (0/1)
   - I only used Hooks in Client Components, they are 5 components
+  - I tried to use minimal Hooks as much as I could
 - Shouldn't use redux. ✅ (1/1)
   - Did not use Redux
 - The only required functionality is “add to cart”. add to cart functionality can be divided in 2 cases:
@@ -92,3 +93,9 @@ The task is to implement this design in react following these rules:
   - https://github.com/OmarThinks/React-Ecommerce-Project
 - Task should be deployed to github pages ✅ (1/1)
   - https://omarthinks.github.io/React-Ecommerce-Project/
+
+# My Total Score:
+
+# 16/18
+
+I completed 16 items out of the 18 items required. Thats `88.88%`.
