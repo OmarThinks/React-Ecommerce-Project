@@ -1,7 +1,9 @@
 const colors = {
-  primaryColor: "yellow",
-  secondaryColor: "purple",
+  primaryColor: "purple",
+  secondaryColor: "yellow",
   normalText: "black",
+  gold: "gold",
+  gray: "gray",
 };
 
 export default colors;

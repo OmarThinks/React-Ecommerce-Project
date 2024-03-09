@@ -28,12 +28,15 @@ export default function Home() {
               <ProductImage size={90} imageNumnber={1} borderRadius={5} />
               <ProductImage size={90} imageNumnber={2} borderRadius={5} />
               <ProductImage size={90} imageNumnber={3} borderRadius={5} />
-              <FaChevronRight size={50} color="black" />
+              <FaChevronRight size={50} color={colors.normalText} />
             </div>
           </div>
           <div className="flex flex-col max-w-[500px] gap-[10px]">
             <SiAdidas size={50} />
-            <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            <p
+              className="text-[20px] font-semibold"
+              style={{ color: colors.normalText }}
+            >
               Adidas black t-shirt Lorem ipsum dolor sit amet, consectetur
               adipiscing elit.
             </p>
@@ -42,19 +45,22 @@ export default function Home() {
             </p>
             <div className="flex flex-row gap-2.5 items-center flex-wrap">
               <div className="flex flex-row gap-1">
-                <FaStar size={20} color="gold" />
-                <FaStar size={20} color="gold" />
-                <FaStar size={20} color="gold" />
-                <FaStar size={20} color="gold" />
-                <FaStar size={20} color="gold" />
+                <FaStar size={20} color={colors.gold} />
+                <FaStar size={20} color={colors.gold} />
+                <FaStar size={20} color={colors.gold} />
+                <FaStar size={20} color={colors.gold} />
+                <FaStar size={20} color={colors.gold} />
               </div>
               <p
                 className="text-[20px] font-extrabold"
-                style={{ color: "black" }}
+                style={{ color: colors.normalText }}
               >
                 4.9 of 5
               </p>
-              <p className="text-[13px] font-bold" style={{ color: "grey" }}>
+              <p
+                className="text-[13px] font-bold"
+                style={{ color: colors.gray }}
+              >
                 22 rates
               </p>
             </div>
@@ -66,18 +72,21 @@ export default function Home() {
                 <p className="text-[30px] font-bold">9,000</p>
                 <p className="text-[20px] font-normal">LE</p>
               </div>
-              <p className="line-through" style={{ color: "grey" }}>
+              <p className="line-through" style={{ color: colors.gray }}>
                 9,000 LE
               </p>
               <p
                 className="px-2 py-1 rounded-[5px] font-medium"
-                style={{ background: "gold", color: "black" }}
+                style={{ background: colors.gold, color: colors.normalText }}
               >
                 30% Off
               </p>
             </div>
             <Spacer />
-            <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            <p
+              className="text-[20px] font-semibold"
+              style={{ color: colors.normalText }}
+            >
               Size
             </p>
             <div className="flex flex-row gap-[10px]">
@@ -88,7 +97,10 @@ export default function Home() {
               <SizeOption text="XX Large" isChosen={false} />
             </div>
             <Spacer />
-            <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            <p
+              className="text-[20px] font-semibold"
+              style={{ color: colors.normalText }}
+            >
               Color
             </p>
             <div className="flex flex-row">
@@ -96,7 +108,10 @@ export default function Home() {
               <ColorOption imgLink="/shirt-2.jpg" isChosen={false} />
             </div>
             <Spacer />
-            <p className="text-[20px] font-semibold" style={{ color: "black" }}>
+            <p
+              className="text-[20px] font-semibold"
+              style={{ color: colors.normalText }}
+            >
               Quantity
             </p>
             <QuantityCounter />
@@ -106,8 +121,8 @@ export default function Home() {
               <Button
                 style={{ flex: 1 }}
                 text={"Pickup From Store"}
-                bgColor="yellow"
-                textColor="black"
+                bgColor={colors.secondaryColor}
+                textColor={colors.normalText}
               />
             </div>
           </div>
