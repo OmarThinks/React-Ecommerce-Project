@@ -29,7 +29,7 @@ The task is to implement this design in react following these rules:
     - Clicking on the top cart icon should show cart items dropdown ✅ (1/1)
   - In both cases Pressing the "Add to cart" button should increment the items at cart by quantity. ✅ (1/1)
 - Task should be delivered as a github public repository ✅ (1/1)
-- Task should be deployed to github pages ⚠️ (0/1)
+- Task should be deployed to github pages ✅ (1/1)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
