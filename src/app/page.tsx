@@ -104,8 +104,8 @@ export default function Home() {
               Color
             </p>
             <div className="flex flex-row">
-              <ColorOption imgLink="/shirt-1.jpeg" isChosen={true} />
-              <ColorOption imgLink="/shirt-2.jpg" isChosen={false} />
+              <ColorOption imgNumber={0} isChosen={true} />
+              <ColorOption imgNumber={1} isChosen={false} />
             </div>
             <Spacer />
             <p
