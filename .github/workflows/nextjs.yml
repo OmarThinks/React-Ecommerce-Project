@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        working-directory: ./app
         uses: actions/checkout@v4
       - name: Detect package manager
         working-directory: ./app
