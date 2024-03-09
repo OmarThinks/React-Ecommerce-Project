@@ -8,6 +8,7 @@ import {
 } from "@components";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
+import colors from "@/theme/colors";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           <div className="flex flex-col gap-[10px]">
             <ProductImage size={500} imageNumnber={0} borderRadius={10} />
             <div className="flex flex-row gap-[10px] items-center flex-wrap justify-center">
-              <FaChevronLeft size={50} color="black" />
+              <FaChevronLeft size={50} color={colors.normalText} />
               <ProductImage size={90} imageNumnber={0} borderRadius={5} />
               <ProductImage size={90} imageNumnber={1} borderRadius={5} />
               <ProductImage size={90} imageNumnber={2} borderRadius={5} />
