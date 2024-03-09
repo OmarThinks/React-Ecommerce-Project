@@ -18,9 +18,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
+      //"@/*": ["./src/*"],
       "@components": ["./src/components/index.tsx"],
-      "@client": ["./src/clientComponents/index.tsx"],
+      "@clientComponents": ["./src/clientComponents/index.tsx"],
       "@colors": ["./src/theme/colors.tsx"]
     }
   },

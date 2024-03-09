@@ -1,5 +1,5 @@
 "use client";
-import { PressFiller } from "@/components";
+import { PressFiller } from "@components";
 import { Drawer } from "@mui/material";
 import { Suspense, lazy, memo, useCallback, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { memo } from "react";
+//import Image0 from ""
 
 const imageLinks = [
   "/shirt-1.jpeg",

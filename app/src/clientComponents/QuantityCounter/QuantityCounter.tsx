@@ -1,5 +1,5 @@
 "use client";
-import { CircleIcon } from "@/components";
+import { CircleIcon } from "@components";
 import { memo, useCallback, useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import colors from "@colors";

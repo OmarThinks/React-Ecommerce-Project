@@ -1,4 +1,4 @@
-import { AddToCart, Cart, QuantityCounter } from "@/clientComponents";
+import { AddToCart, Cart, QuantityCounter } from "@clientComponents";
 import {
   Button,
   ColorOption,
@@ -8,7 +8,7 @@ import {
 } from "@components";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
-import colors from "@/theme/colors";
+import colors from "@colors";
 
 import Image1 from "../../public/shirt-1.jpeg";
 import Image from "next/image";
