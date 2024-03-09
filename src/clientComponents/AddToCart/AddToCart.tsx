@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@components";
 import { memo } from "react";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 const addTocart = () => {
   console.log(localStorage.cartCounter);

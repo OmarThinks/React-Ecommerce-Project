@@ -2,7 +2,7 @@
 import { CircleIcon } from "@components";
 import { memo, useCallback, useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 const QuantityCounter = memo(() => {
   const [counter, setCounter] = useState(1);

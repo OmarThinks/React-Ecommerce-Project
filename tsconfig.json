@@ -18,10 +18,10 @@
       }
     ],
     "paths": {
-      //"@/*": ["./src/*"],
+      "@/*": ["./src/*"],
+      //"@colors": ["./src/theme/colors.tsx"],
       "@components": ["./src/components/index.tsx"],
       "@clientComponents": ["./src/clientComponents/index.tsx"],
-      //"@colors": ["./src/theme/colors.tsx"],
       "@colors": ["./src/theme/colors.module.scss"],
       "@images/*": ["./src/images/*"]
     }

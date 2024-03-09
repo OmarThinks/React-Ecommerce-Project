@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 const SizeOption = memo(
   ({ text, isChosen }: { text: string; isChosen: boolean }) => {

@@ -3,7 +3,7 @@ import { PressFiller } from "@components";
 import { Drawer } from "@mui/material";
 import { Suspense, lazy, memo, useCallback, useEffect, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 const ItemsDrawer = lazy(() => import("../ItemsDrawer/ItemsDrawer"));
 const EmptyDrawer = lazy(() => import("../EmptyDrawer/EmptyDrawer"));

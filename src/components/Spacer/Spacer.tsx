@@ -1,5 +1,5 @@
 import { memo } from "react";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 const Spacer = memo(() => {
   return (

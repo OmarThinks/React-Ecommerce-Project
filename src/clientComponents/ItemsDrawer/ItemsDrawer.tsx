@@ -1,6 +1,6 @@
 "use client";
 import { Button, CircleIcon, PressFiller, ProductImage } from "@components";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 import { memo } from "react";
 import { FaTimes } from "react-icons/fa";
 

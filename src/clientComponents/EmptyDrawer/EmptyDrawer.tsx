@@ -2,7 +2,7 @@
 import { CircleIcon } from "@components";
 import { memo } from "react";
 import { FaTimes } from "react-icons/fa";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 const EmptyDrawer = memo(
   ({ setIsDrawerOpen }: { setIsDrawerOpen: (a: boolean) => void }) => {

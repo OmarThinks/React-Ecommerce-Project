@@ -8,7 +8,7 @@ import {
 } from "@components";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { SiAdidas } from "react-icons/si";
-import colors from "@colors";
+import colors from "@/theme/colors.module.scss";
 
 export default function Home() {
   return (
